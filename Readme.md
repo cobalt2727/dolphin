@@ -105,7 +105,7 @@ Useful for development as root access is not required.
 1. `mkdir Build`
 2. `cd Build`
 3. `cmake .. -DLINUX_LOCAL_DEV=true`
-4. `make`
+4. `make -j$(nproc)`
 5. `ln -s ../../Data/Sys Binaries/`
 
 ### Linux Portable Build Steps:
@@ -116,7 +116,7 @@ Or useful for having multiple distinct Dolphin setups for testing/development/TA
 1. `mkdir Build`
 2. `cd Build`
 3. `cmake .. -DLINUX_LOCAL_DEV=true`
-4. `make`
+4. `make -j$(nproc)`
 5. `cp -r ../Data/Sys/ Binaries/`
 6. `touch Binaries/portable.txt`
 
